@@ -15,6 +15,7 @@
 		3E66814E26E4C37400BDF6C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E66814C26E4C37400BDF6C5 /* LaunchScreen.storyboard */; };
 		3E66815926E4C37400BDF6C5 /* TestingARKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66815826E4C37400BDF6C5 /* TestingARKitTests.swift */; };
 		3E66816426E4C37500BDF6C5 /* TestingARKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E66816326E4C37500BDF6C5 /* TestingARKitUITests.swift */; };
+		3E66817226E4C5BD00BDF6C5 /* earth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3E66817126E4C5BD00BDF6C5 /* earth.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3E66815F26E4C37500BDF6C5 /* TestingARKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingARKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E66816326E4C37500BDF6C5 /* TestingARKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingARKitUITests.swift; sourceTree = "<group>"; };
 		3E66816526E4C37500BDF6C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E66817126E4C5BD00BDF6C5 /* earth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				3E66814326E4C37200BDF6C5 /* art.scnassets */,
 				3E66814526E4C37200BDF6C5 /* ViewController.swift */,
 				3E66814726E4C37200BDF6C5 /* Main.storyboard */,
+				3E66817126E4C5BD00BDF6C5 /* earth.jpeg */,
 				3E66814A26E4C37400BDF6C5 /* Assets.xcassets */,
 				3E66814C26E4C37400BDF6C5 /* LaunchScreen.storyboard */,
 				3E66814F26E4C37400BDF6C5 /* Info.plist */,
@@ -234,6 +237,7 @@
 				3E66814426E4C37200BDF6C5 /* art.scnassets in Resources */,
 				3E66814E26E4C37400BDF6C5 /* LaunchScreen.storyboard in Resources */,
 				3E66814B26E4C37400BDF6C5 /* Assets.xcassets in Resources */,
+				3E66817226E4C5BD00BDF6C5 /* earth.jpeg in Resources */,
 				3E66814926E4C37200BDF6C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

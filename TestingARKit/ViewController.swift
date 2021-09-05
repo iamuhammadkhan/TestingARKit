@@ -23,10 +23,24 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SCNScene()
         
         // Set the scene to the view
         sceneView.scene = scene
+        
+        addSphereToScene()
+    }
+    
+    private func addSphereToScene() {
+        let sphere = SCNSphere(radius: 0.3)
+        sphere.firstMaterial?.diffuse.contents = UIImage(named: "earth.jpeg")
+        
+        let sphereNode = SCNNode(geometry: sphere)
+        let rotateAction = SCNAction.rotateBy(x: 0, y: 0.2, z: 0, duration: 2)
+        
+        sphereNode.position = SCNVector3(0, 0, -2)
+        sphereNode.runAction(SCNAction.repeatForever(rotateAction))
+        sceneView.scene.rootNode.addChildNode(sphereNode)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,27 +62,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     // MARK: - ARSCNViewDelegate
     
-/*
-    // Override to create and configure nodes for anchors added to the view's session.
-    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        let node = SCNNode()
-     
-        return node
-    }
-*/
-    
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
-        
     }
     
     func sessionWasInterrupted(_ session: ARSession) {
         // Inform the user that the session has been interrupted, for example, by presenting an overlay
-        
     }
     
     func sessionInterruptionEnded(_ session: ARSession) {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
-        
     }
 }
